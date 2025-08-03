@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f4f7, #d9e4f5);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 5px;
+}
+
+.motto {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+form h2 {
+    color: #1a73e8;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0c5dc0;
+}
+
+#reportCards {
+    margin-top: 50px;
+}
+
+.report-card {
+    border: 2px solid #1a73e8;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background: #f7faff;
+    page-break-after: always; /* Ensures each report card is on new page in PDF/Print */
+}
+
+.report-card h2 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 0;
+}
+
+.report-card .motto {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.report-card .address {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.report-card hr {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.report-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.report-card table, .report-card th, .report-card td {
+    border: 1px solid #ddd;
+}
+
+.report-card th, .report-card td {
+    padding: 8px;
+    text-align: center;
+}
+
+.signature-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signature {
+    text-align: center;
+}
+
+/* Ensure clean print/pdf output */
+@media print {
+    body {
+        background: yellow;
+    }
+    .container {
+        box-shadow: none;
+        padding: 0;
+    }
+    form, .buttons {
+        display: none;
+    }
+}
